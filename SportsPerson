@@ -1,0 +1,56 @@
+public class SportsPerson {
+    private String name;
+
+    protected String getName() {
+        return name;
+    }
+
+    public SportsPerson(String name) {
+        this.name = name;
+    }
+    public void display_all_info() {
+        System.out.println("Name:"+getName());
+    }
+    public static void main(String[] args) {
+        SportsPerson sp=new SportsPerson("Shivaditya");
+        sp.display_all_info();
+        Athelete a=new Athelete("Swayam", "500MtrSprint");
+        a.display_all_info();
+        HockeyPlayer h=new HockeyPlayer("Rohan", 5);
+        h.display_all_info();
+    }
+}
+
+class Athelete extends SportsPerson{
+    private String event;
+
+    protected String getEvent() {
+        return event;
+    }
+
+    public Athelete(String name, String event) {
+        super(name);
+        this.event = event;
+    }
+    public void display_all_info() {
+        System.out.println("Name:"+getName()+" EventName: "+getEvent());
+    }
+
+}
+class HockeyPlayer extends SportsPerson{
+    private int noOfGoals;
+
+    protected int getNoOfGoals() {
+        return noOfGoals;
+    }
+
+    public HockeyPlayer(String name, int noOfGoals) {
+        super(name);
+        this.noOfGoals = noOfGoals;
+    }
+    public void display_all_info() {
+        System.out.println("Name:"+getName()+" No of Goals: "+getNoOfGoals());
+    }
+
+
+}
