@@ -1,0 +1,83 @@
+class Teacher {
+    String name;
+    String post;
+    int salary;
+    Teacher(String name, String post, int salary){
+        this.name=name;
+        this.post=post;
+        this.salary=salary;
+    }
+    void display(){
+        System.out.println(name+" "+post+" "+salary);
+    }
+}
+class Professor extends Teacher{
+    Professor(String name, String post, int salary) {
+        super(name, post, salary);
+    }
+}
+class Associative_Professor extends Teacher{
+    Associative_Professor(String name, String post, int salary) {
+        super(name, post, salary);
+    }
+}
+
+class Assistance_Professor extends Teacher{
+    Assistance_Professor(String name, String post, int salary) {
+        super(name, post, salary);
+    }
+
+}
+
+public class Inheritance {
+    public static void main(String[] args) {
+        System.out.println("Name \t\t Post \t\t\t Salary");
+        Professor obj1 = new Professor("H.Verma\t\t","Professor\t\t",750000);
+        obj1.display();
+        Associative_Professor obj2 = new Associative_Professor("T.Singh","Associative Professor",380000);
+        obj2.display();
+        Assistance_Professor obj3 = new Assistance_Professor("H.Nair","Assistance Professor",350000);
+        obj3.display();
+    }
+}class Teacher {
+    String name;
+    String post;
+    int salary;
+    Teacher(String name, String post, int salary){
+        this.name=name;
+        this.post=post;
+        this.salary=salary;
+    }
+    void display(){
+        System.out.println(name+" "+post+" "+salary);
+    }
+}
+class Professor extends Teacher{
+    Professor(String name, String post, int salary) {
+        super(name, post, salary);
+    }
+}
+class Associative_Professor extends Teacher{
+    Associative_Professor(String name, String post, int salary) {
+        super(name, post, salary);
+    }
+}
+
+class Assistance_Professor extends Teacher{
+    Assistance_Professor(String name, String post, int salary) {
+        super(name, post, salary);
+    }
+
+}
+
+public class Inheritance {
+    public static void main(String[] args) {
+        System.out.println("Name \t\t Post \t\t\t Salary");
+        Professor obj1 = new Professor("H.Verma\t\t","Professor\t\t",750000);
+        obj1.display();
+        Associative_Professor obj2 = new Associative_Professor("T.Singh","Associative Professor",380000);
+        obj2.display();
+        Assistance_Professor obj3 = new Assistance_Professor("H.Nair","Assistance Professor",350000);
+        obj3.display();
+    }
+}
